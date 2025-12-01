@@ -1,0 +1,107 @@
+[
+    {
+        "filename": "target_bom_1.xlsx",
+        "quantity_mismatch": [
+            {
+                "MPN": "PN-0002",
+                "master_quantity": 10.0,
+                "target_quantity": 12.0
+            }
+        ],
+        "missing_from_target": [
+            {
+                "MPN": "PN-0003",
+                "master_quantity": 5.0,
+                "master_description": "Resistor 1k Ohm",
+                "master_ref_des": "R3, R4"
+            }
+        ],
+        "added_in_target": [
+            {
+                "MPN": "PN-0004",
+                "target_quantity": 20.0,
+                "target_description": "Inductor 10uH",
+                "target_ref_des": "L1"
+            }
+        ],
+        "description_modified": [
+            {
+                "MPN": "PN-0005",
+                "master_description": "Capacitor 100uF",
+                "target_description": "Capacitor 100uF 25V"
+            }
+        ],
+        "ref_des_modified": [
+            {
+                "MPN": "PN-0006",
+                "master_ref_des": "U1",
+                "target_ref_des": "U1, U2"
+            }
+        ],
+        "comparison_summary": [
+            {
+                "MPN": "PN-0001",
+                "status": "unchanged",
+                "master_quantity": 1.0,
+                "master_description": "IC Microcontroller",
+                "master_ref_des": "U1",
+                "target_quantity": 1.0,
+                "target_description": "IC Microcontroller",
+                "target_ref_des": "U1"
+            },
+            {
+                "MPN": "PN-0002",
+                "status": "modified",
+                "master_quantity": 10.0,
+                "master_description": "Capacitor 10uF",
+                "master_ref_des": "C1, C2",
+                "target_quantity": 12.0,
+                "target_description": "Capacitor 10uF",
+                "target_ref_des": "C1, C2",
+                "differences": ["quantity_mismatch"]
+            },
+            {
+                "MPN": "PN-0003",
+                "status": "missing_from_target",
+                "master_quantity": 5.0,
+                "master_description": "Resistor 1k Ohm",
+                "master_ref_des": "R3, R4",
+                "target_quantity": null,
+                "target_description": "",
+                "target_ref_des": ""
+            },
+            {
+                "MPN": "PN-0004",
+                "status": "added_in_target",
+                "master_quantity": null,
+                "master_description": "",
+                "master_ref_des": "",
+                "target_quantity": 20.0,
+                "target_description": "Inductor 10uH",
+                "target_ref_des": "L1"
+            },
+            {
+                "MPN": "PN-0005",
+                "status": "modified",
+                "master_quantity": 2.0,
+                "master_description": "Capacitor 100uF",
+                "master_ref_des": "C5",
+                "target_quantity": 2.0,
+                "target_description": "Capacitor 100uF 25V",
+                "target_ref_des": "C5",
+                "differences": ["description_modified"]
+            },
+            {
+                "MPN": "PN-0006",
+                "status": "modified",
+                "master_quantity": 1.0,
+                "master_description": "IC Regulator",
+                "master_ref_des": "U1",
+                "target_quantity": 1.0,
+                "target_description": "IC Regulator",
+                "target_ref_des": "U1, U2",
+                "differences": ["ref_des_modified"]
+            }
+        ]
+    }
+]

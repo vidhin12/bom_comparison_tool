@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM Comparison Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Table row highlighting */
+        .row-missing { background: #fee2e2 !important; }        /* Red-100 */
+        .row-extra { background: #dcfce7 !important; }          /* Green-100 */
+        .row-mismatch { background: #fef3c7 !important; }       /* Amber-100 */
+        .row-match { background: #ffffff !important; }
+
+        th { font-weight: 600; }
+
+        /* Summary cards */
+        .card-default { background: white; border: 1px solid #e5e7eb; }
+        .card-missing { background: #fee2e2; border: 1px solid #fecaca; }
+        .card-extra   { background: #dcfce7; border: 1px solid #bbf7d0; }
+        .card-mismatch { background: #fef3c7; border: 1px solid #fde68a; }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Layout container -->
+    <div class="flex">
+
+        <!-- Sidebar -->
+        <aside class="w-64 min-h-screen bg-white shadow-lg p-6">
+
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                🛠️ BOM Tool
+            </h2>
+
+            <nav class="space-y-4">
+                <a href="/" 
+                   class="flex items-center gap-2 text-gray-700 hover:text-indigo-600 text-lg">
+                    📤 Upload & Compare
+                </a>
+
+                <a href="/history" 
+                   class="flex items-center gap-2 text-gray-700 hover:text-indigo-600 text-lg">
+                    📁 Comparison History
+                </a>
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            {% block content %}{% endblock %}
+        </main>
+
+    </div>
+
+</body>
+</html>
