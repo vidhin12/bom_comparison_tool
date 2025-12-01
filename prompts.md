@@ -279,3 +279,14 @@ also create a .md file to track all the prompt that i will give you
 
 3. still getting this error if you want i can give you logs
 
+4. my parser is messing up the mpn mapping again give me a clean version with logs
+
+5. it’s still not aggregating correctly i want the mpns grouped exactly like excel
+
+6. give me the full upload ui with drag drop and show file size before upload
+
+7. add a clear button to reset both master and target files without page refresh
+
+8. comparison is not accurate check both files and fix the mismatch logic
+
+9. when pdf parsing fails i want it to skip that row not crash
