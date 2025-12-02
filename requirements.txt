@@ -1,0 +1,7 @@
+Django>=5.0
+python-dotenv
+pandas
+openpyxl
+python-docx
+PyPDF2
+tabulate
